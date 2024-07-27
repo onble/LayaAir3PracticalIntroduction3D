@@ -169,34 +169,6 @@
           ]
         },
         {
-          "_$id": "kva0sqje",
-          "_$prefab": "cdff5f53-e39d-4354-97b6-8dce5cf0ac9c",
-          "name": "eff_flash",
-          "active": true,
-          "layer": 0,
-          "transform": {
-            "localPosition": {
-              "_$type": "Vector3",
-              "x": 14.850883214061376,
-              "y": 2.5,
-              "z": 3.081324280688365
-            },
-            "localRotation": {
-              "_$type": "Quaternion",
-              "x": 0,
-              "y": 0.9961946980917455,
-              "z": 0,
-              "w": 0.08715574274765814
-            },
-            "localScale": {
-              "_$type": "Vector3",
-              "x": 1,
-              "y": 1,
-              "z": 1
-            }
-          }
-        },
-        {
           "_$id": "rtouhy7x",
           "_$prefab": "411f379a-2e4e-4d91-bb27-a7208d207cb3",
           "name": "eff_star",
@@ -215,6 +187,298 @@
               "y": 0,
               "z": 0,
               "w": 0.7071067811865476
+            }
+          }
+        },
+        {
+          "_$id": "v9x7hmed",
+          "_$prefab": "6bca5825-0191-4f2b-a3e7-fb8dfc6105e6",
+          "name": "signpost_01",
+          "active": true,
+          "layer": 0,
+          "transform": {
+            "localPosition": {
+              "_$type": "Vector3",
+              "x": 6.77,
+              "y": 0.5,
+              "z": 4.84999
+            },
+            "localRotation": {
+              "_$type": "Quaternion",
+              "x": -0.7071067811865475,
+              "y": 0,
+              "z": 0,
+              "w": 0.7071067811865476
+            }
+          }
+        },
+        {
+          "_$id": "n2dozqol",
+          "_$prefab": "6bca5825-0191-4f2b-a3e7-fb8dfc6105e6",
+          "name": "signpost_02",
+          "active": true,
+          "layer": 0,
+          "transform": {
+            "localPosition": {
+              "_$type": "Vector3",
+              "x": 8.5,
+              "y": 0.5,
+              "z": -0.62
+            },
+            "localRotation": {
+              "_$type": "Quaternion",
+              "x": -0.7071067811865475,
+              "y": 0,
+              "z": 0,
+              "w": 0.7071067811865476
+            },
+            "localScale": {
+              "_$type": "Vector3",
+              "x": 0.5,
+              "y": 0.5,
+              "z": 1
+            }
+          }
+        },
+        {
+          "_$id": "6u4ex1e1",
+          "_$prefab": "6bca5825-0191-4f2b-a3e7-fb8dfc6105e6",
+          "name": "signpost_03",
+          "active": true,
+          "layer": 0,
+          "transform": {
+            "localPosition": {
+              "_$type": "Vector3",
+              "x": 15.5,
+              "y": 0.5,
+              "z": -0.6
+            },
+            "localRotation": {
+              "_$type": "Quaternion",
+              "x": -0.7071067811865475,
+              "y": 0,
+              "z": 0,
+              "w": 0.7071067811865476
+            }
+          }
+        },
+        {
+          "_$id": "jzp956t4",
+          "_$prefab": "6bca5825-0191-4f2b-a3e7-fb8dfc6105e6",
+          "name": "signpost_04",
+          "active": true,
+          "layer": 0,
+          "transform": {
+            "localPosition": {
+              "_$type": "Vector3",
+              "x": 22.35,
+              "y": 0.5,
+              "z": -0.62
+            },
+            "localRotation": {
+              "_$type": "Quaternion",
+              "x": -0.7071067811865475,
+              "y": 0,
+              "z": 0,
+              "w": 0.7071067811865476
+            }
+          }
+        },
+        {
+          "_$id": "pbpouoiu",
+          "_$prefab": "6bca5825-0191-4f2b-a3e7-fb8dfc6105e6",
+          "name": "signpost_05",
+          "active": true,
+          "layer": 0,
+          "transform": {
+            "localPosition": {
+              "_$type": "Vector3",
+              "x": 19.35,
+              "y": 0.5,
+              "z": 6.83
+            },
+            "localRotation": {
+              "_$type": "Quaternion",
+              "x": -0.7071067811865475,
+              "y": 0,
+              "z": 0,
+              "w": 0.7071067811865476
+            }
+          }
+        },
+        {
+          "_$id": "a3hlcu4w",
+          "_$prefab": "6bca5825-0191-4f2b-a3e7-fb8dfc6105e6",
+          "name": "signpost_06",
+          "active": true,
+          "layer": 0,
+          "transform": {
+            "localPosition": {
+              "_$type": "Vector3",
+              "x": 16.92,
+              "y": 0.5,
+              "z": 13.5
+            },
+            "localRotation": {
+              "_$type": "Quaternion",
+              "x": -0.7071067811865475,
+              "y": 0,
+              "z": 0,
+              "w": 0.7071067811865476
+            }
+          }
+        },
+        {
+          "_$id": "ao5z9waz",
+          "_$prefab": "6bca5825-0191-4f2b-a3e7-fb8dfc6105e6",
+          "name": "signpost_07",
+          "active": true,
+          "layer": 0,
+          "transform": {
+            "localPosition": {
+              "_$type": "Vector3",
+              "x": 22.8,
+              "y": 0.5,
+              "z": -7.7
+            },
+            "localRotation": {
+              "_$type": "Quaternion",
+              "x": -0.7071067811865475,
+              "y": 0,
+              "z": 0,
+              "w": 0.7071067811865476
+            }
+          }
+        },
+        {
+          "_$id": "hkx45ct0",
+          "_$prefab": "6bca5825-0191-4f2b-a3e7-fb8dfc6105e6",
+          "name": "signpost_08",
+          "active": true,
+          "layer": 0,
+          "transform": {
+            "localPosition": {
+              "_$type": "Vector3",
+              "x": 30.14,
+              "y": 0.5,
+              "z": 4
+            },
+            "localRotation": {
+              "_$type": "Quaternion",
+              "x": -0.7071067811865475,
+              "y": 0,
+              "z": 0,
+              "w": 0.7071067811865476
+            }
+          }
+        },
+        {
+          "_$id": "c9gg7mlg",
+          "_$prefab": "eab9b231-ca66-4810-8827-aea045091cc4",
+          "name": "boxQuestion_01",
+          "active": true,
+          "layer": 0,
+          "transform": {
+            "localPosition": {
+              "_$type": "Vector3",
+              "x": 4.26999,
+              "y": 0,
+              "z": -1.6
+            },
+            "localRotation": {
+              "_$type": "Quaternion",
+              "x": 0.7071067811865476,
+              "y": 0,
+              "z": 0,
+              "w": -0.7071067811865476
+            }
+          }
+        },
+        {
+          "_$id": "hya21wqk",
+          "_$prefab": "eab9b231-ca66-4810-8827-aea045091cc4",
+          "name": "boxQuestion_02",
+          "active": true,
+          "layer": 0,
+          "transform": {
+            "localPosition": {
+              "_$type": "Vector3",
+              "x": 4.59999,
+              "y": 0,
+              "z": 10.42
+            },
+            "localRotation": {
+              "_$type": "Quaternion",
+              "x": 0.7071067811865476,
+              "y": 0,
+              "z": 0,
+              "w": -0.7071067811865476
+            }
+          }
+        },
+        {
+          "_$id": "3jw47nhl",
+          "_$prefab": "eab9b231-ca66-4810-8827-aea045091cc4",
+          "name": "boxQuestion_03",
+          "active": true,
+          "layer": 0,
+          "transform": {
+            "localPosition": {
+              "_$type": "Vector3",
+              "x": 30.5,
+              "y": 0,
+              "z": -12.2
+            },
+            "localRotation": {
+              "_$type": "Quaternion",
+              "x": 0.7071067811865476,
+              "y": 0,
+              "z": 0,
+              "w": -0.7071067811865476
+            }
+          }
+        },
+        {
+          "_$id": "nfscwy7m",
+          "_$prefab": "eab9b231-ca66-4810-8827-aea045091cc4",
+          "name": "boxQuestion_04",
+          "active": true,
+          "layer": 0,
+          "transform": {
+            "localPosition": {
+              "_$type": "Vector3",
+              "x": 37.86,
+              "y": 0,
+              "z": 9.18
+            },
+            "localRotation": {
+              "_$type": "Quaternion",
+              "x": 0.7071067811865476,
+              "y": 0,
+              "z": 0,
+              "w": -0.7071067811865476
+            }
+          }
+        },
+        {
+          "_$id": "3sny9h5e",
+          "_$prefab": "eab9b231-ca66-4810-8827-aea045091cc4",
+          "name": "boxQuestion_05",
+          "active": true,
+          "layer": 0,
+          "transform": {
+            "localPosition": {
+              "_$type": "Vector3",
+              "x": 10.73,
+              "y": 0,
+              "z": -18.15
+            },
+            "localRotation": {
+              "_$type": "Quaternion",
+              "x": 0.7071067811865476,
+              "y": 0,
+              "z": 0,
+              "w": -0.7071067811865476
             }
           }
         }

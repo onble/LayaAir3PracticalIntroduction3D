@@ -3,6 +3,12 @@
   "_$id": "ydyptkao",
   "_$type": "Sprite3D",
   "name": "Sprite3D",
+  "_$comp": [
+    {
+      "_$type": "c5ccbf6c-b0f8-4c8e-8c27-cd7716a9ba13",
+      "scriptPath": "../src/wander/FlashScript.ts"
+    }
+  ],
   "_$child": [
     {
       "_$id": "882l4fj0",
@@ -18,8 +24,9 @@
             }
           ],
           "_particleSystem": {
-            "_isPlaying": true,
             "duration": 1,
+            "looping": false,
+            "playOnAwake": false,
             "startLifetimeConstant": 0.25,
             "startSpeedConstant": 0,
             "startSizeConstant": 1.7,
@@ -72,7 +79,14 @@
               ]
             },
             "emission": {
-              "emissionRate": 1
+              "emissionRate": 1,
+              "_bursts": [
+                {
+                  "_$type": "Burst",
+                  "_minCount": 1,
+                  "_maxCount": 1
+                }
+              ]
             },
             "colorOverLifetime": {
               "_$type": "ColorOverLifetime",

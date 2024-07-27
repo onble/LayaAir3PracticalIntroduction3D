@@ -1,0 +1,85 @@
+{
+  "_$ver": 1,
+  "_$id": "y4e714r6",
+  "_$type": "Dialog",
+  "name": "Dialog",
+  "width": 1920,
+  "height": 1080,
+  "_$comp": [
+    {
+      "_$type": "a7d8ac30-0489-400a-b80f-612ebc994f84",
+      "scriptPath": "../src/wander/DialogInfoScript.ts"
+    }
+  ],
+  "_$child": [
+    {
+      "_$id": "tavq5jw9",
+      "_$type": "Image",
+      "name": "Image",
+      "x": 1110,
+      "y": 140,
+      "width": 500,
+      "height": 800,
+      "centerX": 400,
+      "centerY": 0,
+      "skin": "res://5a3eef8a-2e71-4e57-883d-9732354d00ab",
+      "sizeGrid": "30,30,30,30,0",
+      "color": "#ffffff",
+      "_$child": [
+        {
+          "_$id": "adlpz8mx",
+          "_$type": "Label",
+          "name": "Label",
+          "y": 75,
+          "width": 500,
+          "height": 50,
+          "text": "房屋信息",
+          "font": "Arial-Black",
+          "fontSize": 40,
+          "color": "rgba(0, 0, 0, 1)",
+          "align": "center",
+          "valign": "middle",
+          "padding": "0,0,0,0"
+        }
+      ]
+    },
+    {
+      "_$id": "e0sj0qt4",
+      "_$type": "TextArea",
+      "name": "infoTextArea",
+      "x": 1135,
+      "y": 290,
+      "width": 450,
+      "height": 550,
+      "_mouseState": 2,
+      "centerX": 400,
+      "text": "TextArea",
+      "font": "Arial-Black",
+      "fontSize": 36,
+      "color": "rgba(0, 0, 0, 1)",
+      "valign": "top",
+      "overflow": "scroll",
+      "padding": "6,6,6,6",
+      "skin": "res://9eb4836d-78c4-4be3-aa53-70a613fef28d",
+      "type": "text",
+      "maxChars": 0,
+      "prompt": "",
+      "promptColor": "#A9A9A9"
+    },
+    {
+      "_$id": "no7rzryx",
+      "_$type": "Button",
+      "name": "btnClose",
+      "x": 1557,
+      "y": 124,
+      "width": 64,
+      "height": 64,
+      "_mouseState": 2,
+      "skin": "res://430e2884-da0f-4fac-a23e-7697fd16f8e5",
+      "label": "",
+      "labelSize": 20,
+      "labelAlign": "center",
+      "labelVAlign": "middle"
+    }
+  ]
+}

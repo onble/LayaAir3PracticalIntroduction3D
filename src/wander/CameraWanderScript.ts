@@ -8,6 +8,14 @@ export class CameraWanderScript extends Laya.Script {
     // 记录鼠标的位置
     lastMouseX: number = 0;
     lastMouseY: number = 0;
+
+    // 固定摄像机的高度
+    aimY: number = 2.5;
+    // 摄像机移动的目标位置
+    aimPosition: Laya.Vector3;
+    /** 移动方向向量 */
+    direction: Laya.Vector3 = new Laya.Vector3(0, 0, 0);
+    speed: number = 4;
     /**
      * 记录鼠标按下的状态
      */
@@ -33,12 +41,26 @@ export class CameraWanderScript extends Laya.Script {
     public getMouseUp() {
         this.isMouseDown = false;
     }
+    /** 获取目标位置 */
+    getAim(position: Laya.Vector3) {
+        this.aimPosition = new Laya.Vector3(position.x, this.aimY, position.z);
+        let subtract = new Laya.Vector3();
+
+        Laya.Vector3.subtract(
+            this.aimPosition,
+            this.owner.transform.position,
+            subtract
+        );
+        Laya.Vector3.normalize(subtract, this.direction);
+    }
 
     //组件被激活后执行，此时所有节点和组件均已创建完毕，此方法只执行一次
     //onAwake(): void {}
 
     //组件被启用后执行，例如节点被添加到舞台后
-    //onEnable(): void {}
+    onEnable(): void {
+        this.aimPosition = this.owner.transform.position;
+    }
 
     //组件被禁用时执行，例如从节点从舞台移除后
     //onDisable(): void {}
@@ -50,7 +72,24 @@ export class CameraWanderScript extends Laya.Script {
     //onDestroy(): void {}
 
     //每帧更新时执行，尽量不要在这里写大循环逻辑或者使用getComponent方法
-    //onUpdate(): void {}
+    onUpdate(): void {
+        if (this.aimPosition === this.owner.transform.position) return;
+        let d2 = Laya.Vector3.distanceSquared(
+            this.owner.transform.position,
+            this.aimPosition
+        );
+        if (d2 <= 0.01) {
+            this.owner.transform.position = this.aimPosition;
+        } else {
+            let translation = new Laya.Vector3();
+            Laya.Vector3.scale(
+                this.direction,
+                (Laya.timer.delta * this.speed) / 1000,
+                translation
+            );
+            this.owner.transform.translate(translation, false);
+        }
+    }
 
     //每帧更新时执行，在update之后执行，尽量不要在这里写大循环逻辑或者使用getComponent方法
     //onLateUpdate(): void {}

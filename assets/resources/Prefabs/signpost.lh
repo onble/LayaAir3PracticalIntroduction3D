@@ -38,11 +38,13 @@
     {
       "_$type": "PhysicsCollider",
       "colliderShape": {
-        "_$type": "MeshColliderShape",
-        "mesh": {
-          "_$uuid": "09ca91e4-c557-4652-acb3-00a6e634a713",
-          "_$type": "Mesh"
-        }
+        "_$type": "CylinderColliderShape",
+        "localOffset": {
+          "_$type": "Vector3",
+          "z": 0.5
+        },
+        "height": 2,
+        "orientation": 2
       },
       "collisionGroup": 1,
       "isTrigger": true
