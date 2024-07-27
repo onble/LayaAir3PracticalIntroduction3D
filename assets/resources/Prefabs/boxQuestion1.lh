@@ -1,0 +1,117 @@
+{
+  "_$ver": 1,
+  "_$id": "rtg04ibp",
+  "_$type": "Sprite3D",
+  "name": "boxQuestion",
+  "transform": {
+    "localRotation": {
+      "_$type": "Quaternion",
+      "x": 0.7071067811865476,
+      "w": -0.7071067811865476
+    },
+    "localScale": {
+      "_$type": "Vector3",
+      "x": 0.5,
+      "y": 0.5,
+      "z": 2
+    }
+  },
+  "_$comp": [
+    {
+      "_$type": "MeshFilter",
+      "sharedMesh": {
+        "_$uuid": "09ca91e4-c557-4652-acb3-00a6e634a713",
+        "_$type": "Mesh"
+      }
+    },
+    {
+      "_$type": "MeshRenderer",
+      "receiveShadow": true,
+      "castShadow": true,
+      "sharedMaterials": [
+        {
+          "_$uuid": "ae42b822-01c2-413e-8e78-42fc6cd67d5b",
+          "_$type": "Material"
+        }
+      ]
+    },
+    {
+      "_$type": "PhysicsCollider",
+      "colliderShape": {
+        "_$type": "MeshColliderShape",
+        "mesh": {
+          "_$uuid": "09ca91e4-c557-4652-acb3-00a6e634a713",
+          "_$type": "Mesh"
+        }
+      },
+      "collisionGroup": 1,
+      "isTrigger": true
+    },
+    {
+      "_$type": "a0aba865-e220-4867-a762-9cf486380835",
+      "scriptPath": "../src/BoxQuestionProScript.ts",
+      "text": ""
+    }
+  ],
+  "_$child": [
+    {
+      "_$id": "h6g9ecra",
+      "_$type": "Sprite3D",
+      "name": "box",
+      "transform": {
+        "localPosition": {
+          "_$type": "Vector3",
+          "z": 0.65
+        },
+        "localScale": {
+          "_$type": "Vector3",
+          "x": 2,
+          "y": 2,
+          "z": 0.5
+        }
+      },
+      "_$comp": [
+        {
+          "_$type": "MeshFilter",
+          "sharedMesh": {
+            "_$uuid": "cbc76876-1fa6-4b5c-b654-480d9a596263",
+            "_$type": "Mesh"
+          }
+        },
+        {
+          "_$type": "MeshRenderer",
+          "receiveShadow": true,
+          "castShadow": true,
+          "sharedMaterials": [
+            {
+              "_$uuid": "d1f817a1-8030-49ee-927e-11a24a684221",
+              "_$type": "Material"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_$id": "2y4y2350",
+      "_$type": "Sprite3D",
+      "name": "Sprite3D",
+      "transform": {
+        "localPosition": {
+          "_$type": "Vector3",
+          "z": 1.3
+        }
+      },
+      "_$comp": [
+        {
+          "_$type": "UI3D",
+          "prefab": {
+            "_$uuid": "f32f1a92-bcdf-4be2-a54f-4259090d765d",
+            "_$type": "Prefab"
+          },
+          "resolutionRate": 256,
+          "renderMode": 2
+        }
+      ]
+    }
+  ]
+}

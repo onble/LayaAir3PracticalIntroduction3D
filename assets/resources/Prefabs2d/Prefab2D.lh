@@ -1,0 +1,41 @@
+{
+  "_$ver": 1,
+  "_$id": "oh24t1ee",
+  "_$type": "Box",
+  "name": "Box",
+  "width": 256,
+  "height": 256,
+  "_mouseState": 2,
+  "_$child": [
+    {
+      "_$id": "b2mdjd1k",
+      "_$type": "Button",
+      "name": "Button",
+      "x": 68,
+      "y": 148,
+      "width": 120,
+      "height": 40,
+      "_mouseState": 2,
+      "centerX": 0,
+      "centerY": 40,
+      "skin": "res://d4cfd6a8-0d0a-475b-ac93-d85eaa646936",
+      "label": "点我",
+      "labelSize": 20,
+      "labelAlign": "center",
+      "labelVAlign": "middle"
+    },
+    {
+      "_$id": "lcnnqyd2",
+      "_$type": "ProgressBar",
+      "name": "ProgressBar",
+      "x": 68,
+      "y": 83,
+      "width": 120,
+      "height": 30,
+      "centerX": 0,
+      "centerY": -30,
+      "skin": "res://ae3de75e-ee9f-478d-9f8b-ede75a4fc296",
+      "value": 0.5
+    }
+  ]
+}
