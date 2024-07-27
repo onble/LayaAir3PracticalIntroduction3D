@@ -49,8 +49,7 @@
     },
     {
       "_$type": "a0aba865-e220-4867-a762-9cf486380835",
-      "scriptPath": "../src/BoxQuestionProScript.ts",
-      "text": ""
+      "scriptPath": "../src/BoxQuestionProScript.ts"
     }
   ],
   "_$child": [
@@ -109,6 +108,7 @@
             "_$type": "Prefab"
           },
           "resolutionRate": 256,
+          "enableHit": true,
           "renderMode": 2
         }
       ]

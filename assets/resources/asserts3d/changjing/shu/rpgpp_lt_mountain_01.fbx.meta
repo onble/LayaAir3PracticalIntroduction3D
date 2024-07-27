@@ -1,0 +1,13 @@
+{
+  "uuid": "4cff629b-d622-44da-baa6-4388410acb8d",
+  "importer": {
+    "indexFormat": 0,
+    "normal": 0,
+    "normalCalculateMode": 0,
+    "generateLightmapUVs": true,
+    "_generateLightmapUVs": {
+      "texelsPerUnit": 5
+    },
+    "Anim.Compression": 0
+  }
+}
