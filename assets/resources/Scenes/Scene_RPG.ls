@@ -52,14 +52,16 @@
           "transform": {
             "localPosition": {
               "_$type": "Vector3",
-              "x": 15,
-              "y": 10,
-              "z": 10
+              "x": 19.12197230429735,
+              "y": 5,
+              "z": 4.415377179563532
             },
             "localRotation": {
               "_$type": "Quaternion",
-              "x": -0.25881904510252074,
-              "w": 0.9659258262890683
+              "x": -0.22565226413150138,
+              "y": 0.3890923902498609,
+              "z": 0.09891353017820095,
+              "w": 0.887639724826274
             }
           },
           "orthographicVerticalSize": 10,
@@ -191,6 +193,123 @@
       "name": "joyLayer",
       "width": 1600,
       "height": 1080
+    },
+    {
+      "_$id": "uumyub6e",
+      "_$type": "Button",
+      "name": "btnAttack01",
+      "x": 1670,
+      "y": 830,
+      "width": 150,
+      "height": 150,
+      "_mouseState": 2,
+      "right": 100,
+      "bottom": 100,
+      "stateNum": 2,
+      "skin": "res://58c978d7-27e1-41dd-b8b0-b0c1206e5ebb",
+      "label": "",
+      "labelSize": 20,
+      "labelAlign": "center",
+      "labelVAlign": "middle",
+      "_$child": [
+        {
+          "_$id": "ejomn1gp",
+          "_$type": "Image",
+          "name": "Image",
+          "x": 25,
+          "y": 25,
+          "width": 100,
+          "height": 100,
+          "centerX": 0,
+          "centerY": 0,
+          "skin": "res://117bf01c-0c00-474c-bee6-e85a02277f3a",
+          "color": "#ffffff"
+        }
+      ]
+    },
+    {
+      "_$id": "xjefcwk2",
+      "_$type": "Button",
+      "name": "btnAttack02",
+      "x": 1670,
+      "y": 630,
+      "width": 150,
+      "height": 150,
+      "_mouseState": 2,
+      "right": 100,
+      "bottom": 300,
+      "stateNum": 2,
+      "skin": "res://58c978d7-27e1-41dd-b8b0-b0c1206e5ebb",
+      "label": "",
+      "labelSize": 20,
+      "labelAlign": "center",
+      "labelVAlign": "middle",
+      "_$child": [
+        {
+          "_$id": "asgztuzn",
+          "_$type": "Image",
+          "name": "Image",
+          "x": 25,
+          "y": 25,
+          "width": 100,
+          "height": 100,
+          "centerX": 0,
+          "centerY": 0,
+          "skin": "res://435a78c8-f762-4ac5-9ac7-9f90778bc297",
+          "color": "#ffffff"
+        }
+      ]
+    },
+    {
+      "_$id": "zwlfdys9",
+      "_$type": "Button",
+      "name": "btnCamera",
+      "x": 1670,
+      "y": 430,
+      "width": 150,
+      "height": 150,
+      "_mouseState": 2,
+      "right": 100,
+      "bottom": 500,
+      "stateNum": 2,
+      "skin": "res://58c978d7-27e1-41dd-b8b0-b0c1206e5ebb",
+      "label": "",
+      "labelSize": 20,
+      "labelAlign": "center",
+      "labelVAlign": "middle",
+      "_$child": [
+        {
+          "_$id": "58wgo998",
+          "_$type": "Image",
+          "name": "Image",
+          "x": 25,
+          "y": 25,
+          "width": 100,
+          "height": 100,
+          "centerX": 0,
+          "centerY": 0,
+          "skin": "res://23b547f9-64c1-497b-b312-437716c1f209",
+          "color": "#ffffff"
+        }
+      ]
+    },
+    {
+      "_$id": "mzp2gol1",
+      "_$type": "Button",
+      "name": "btnExit",
+      "x": 1692,
+      "y": 50,
+      "width": 128,
+      "height": 128,
+      "_mouseState": 2,
+      "right": 100,
+      "top": 50,
+      "stateNum": 1,
+      "skin": "res://ca97f1e6-af44-4527-bcf0-af69574abd86",
+      "label": "",
+      "labelSize": 20,
+      "labelAlign": "center",
+      "labelVAlign": "middle"
     }
   ]
 }

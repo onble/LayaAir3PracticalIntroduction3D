@@ -16,6 +16,25 @@ export class UIScript extends Laya.Script {
     onEnable(): void {
         this.joyLayerController();
         this.keyboardInput();
+
+        const btnAttack01 = this.owner.getChildByName("btnAttack01");
+        btnAttack01.on(Laya.Event.CLICK, (e: Laya.Event) => {
+            e.stopPropagation();
+            this.timSP.attack01();
+        });
+        const btnAttack02 = this.owner.getChildByName("btnAttack02");
+        btnAttack02.on(Laya.Event.CLICK, (e: Laya.Event) => {
+            e.stopPropagation();
+            this.timSP.attack02();
+        });
+        const btnCamera = this.owner.getChildByName("btnCamera");
+        btnCamera.on(Laya.Event.CLICK, (e: Laya.Event) => {
+            e.stopPropagation();
+        });
+        const btnExit = this.owner.getChildByName("btnExit");
+        btnExit.on(Laya.Event.CLICK, () => {
+            console.log("btnExit");
+        });
     }
     /** 摇杆控制 */
     joyLayerController() {

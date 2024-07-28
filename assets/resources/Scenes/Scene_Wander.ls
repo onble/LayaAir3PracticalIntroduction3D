@@ -112,16 +112,17 @@
             },
             "localRotation": {
               "_$type": "Quaternion",
-              "x": -0.5339380341860162,
-              "y": -0.11872771631598561,
-              "z": -0.7504230749826449,
-              "w": 0.3710513624305333
+              "x": -0.5339380341860163,
+              "y": -0.11872771631598564,
+              "z": -0.7504230749826452,
+              "w": 0.3710513624305334
             }
           },
           "_$comp": [
             {
               "_$type": "DirectionLightCom",
               "intensity": 1,
+              "lightmapBakedType": 1,
               "shadowMode": 3,
               "shadowStrength": 0.4,
               "shadowDistance": 100,
@@ -4185,6 +4186,24 @@
           }
         }
       ]
+    },
+    {
+      "_$id": "evbq99ox",
+      "_$type": "Button",
+      "name": "btnExit",
+      "x": 1692,
+      "y": 50,
+      "width": 128,
+      "height": 128,
+      "_mouseState": 2,
+      "right": 100,
+      "top": 50,
+      "stateNum": 1,
+      "skin": "res://ca97f1e6-af44-4527-bcf0-af69574abd86",
+      "label": "",
+      "labelSize": 20,
+      "labelAlign": "center",
+      "labelVAlign": "middle"
     }
   ]
 }
