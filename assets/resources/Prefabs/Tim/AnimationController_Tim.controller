@@ -1,0 +1,89 @@
+{
+  "_$type": "Animator",
+  "enabled": true,
+  "path": "",
+  "cullingMode": 2,
+  "controllerLayers": [
+    {
+      "name": "Base Layer",
+      "states": [
+        {
+          "x": 10,
+          "y": 100,
+          "id": "-1",
+          "name": "进入",
+          "nexts": [],
+          "soloTransitions": [
+            {
+              "id": "1",
+              "exitByTime": true,
+              "transduration": 0.15,
+              "exitTime": 0.85
+            }
+          ]
+        },
+        {
+          "y": 100,
+          "id": "-2",
+          "name": "任何状态",
+          "x": 489
+        },
+        {
+          "x": 159,
+          "y": 246.85709494402647,
+          "_isLooping": 0,
+          "id": "0",
+          "name": "Idel",
+          "speed": 1,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "79842625-8cb0-43be-bf02-d5e07a6cc3d8@lani0"
+          }
+        },
+        {
+          "x": 155.71436599197628,
+          "y": 307.69642351335955,
+          "_isLooping": 0,
+          "id": "1",
+          "name": "Move",
+          "speed": 1,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "b191bded-2da7-4a2e-8629-8f56c6ce3dbc@lani0"
+          }
+        },
+        {
+          "x": 149.42861710818462,
+          "y": 431.41071328397203,
+          "_isLooping": 0,
+          "id": "2",
+          "name": "Attack04",
+          "speed": 1,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "ce4ea4f4-d418-4d5d-bc96-6be957381230@lani0"
+          }
+        },
+        {
+          "x": 159.14288495243648,
+          "y": 371.98209177950827,
+          "_isLooping": 0,
+          "id": "3",
+          "name": "Attack02",
+          "speed": 1,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "69ee33dd-f0be-488a-aca2-088af948ac1d@lani0"
+          }
+        }
+      ],
+      "playOnWake": true,
+      "blendingMode": 0,
+      "defaultWeight": 1,
+      "stageX": 61.60001220703121,
+      "stageY": -35.00000610351562,
+      "stageScale": 0.7000000000000001
+    }
+  ],
+  "layerW": 150
+}
