@@ -6,6 +6,11 @@ export class TimScript extends Laya.Script {
 
     animator: Laya.Animator;
     station: string = "Idel";
+
+    /** 记录角色是否在移动 */
+    moving: boolean = false;
+    /** 记录角色的速度 */
+    speed: number = 0.5;
     //组件被激活后执行，此时所有节点和组件均已创建完毕，此方法只执行一次
     // onAwake(): void {}
     //组件被启用后执行，例如节点被添加到舞台后
@@ -14,10 +19,6 @@ export class TimScript extends Laya.Script {
         // 播放融合动作
         this.animator.crossFade("Idel", 0.1);
         this.station = "Idel";
-
-        Laya.timer.once(3000, this, () => {
-            this.attack02();
-        });
     }
 
     /** 攻击动作1 */
@@ -59,7 +60,35 @@ export class TimScript extends Laya.Script {
     //手动调用节点销毁时执行
     //onDestroy(): void {}
     //每帧更新时执行，尽量不要在这里写大循环逻辑或者使用getComponent方法
-    //onUpdate(): void {}
+    onUpdate(): void {
+        if (this.moving && this.station !== "Attack") {
+            let forwardVector = new Laya.Vector3();
+            this.owner.transform.getForward(forwardVector);
+            let translation = new Laya.Vector3();
+            Laya.Vector3.scale(
+                forwardVector,
+                (-1 * Laya.timer.delta * this.speed) / 100,
+                translation
+            );
+            this.owner.transform.translate(translation, false);
+        }
+    }
+
+    getMove(moving: boolean) {
+        if (this.station === "Attack") return;
+        this.moving = moving;
+        if (this.moving == true) {
+            if (this.station !== "Move") {
+                this.animator.crossFade("Move", 0.1);
+                this.station = "Move";
+            }
+        } else {
+            if (this.station !== "Idel") {
+                this.animator.crossFade("Idel", 0.1);
+                this.station = "Idel";
+            }
+        }
+    }
     //每帧更新时执行，在update之后执行，尽量不要在这里写大循环逻辑或者使用getComponent方法
     //onLateUpdate(): void {}
     //鼠标点击后执行。与交互相关的还有onMouseDown等十多个函数，具体请参阅文档。
