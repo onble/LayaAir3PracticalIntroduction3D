@@ -13,7 +13,7 @@ export class Scene3dScript extends Laya.Script {
         let Camera_Tim = this.owner.getChildByName("Camera_Tim");
         Camera_Tim.active = true;
 
-        Laya.stage.on(Laya.Event.MESSAGE, this, (data: anya) => {
+        Laya.stage.on(Laya.Event.MESSAGE, this, (data: any) => {
             if (data.type === "ChangeCamera") {
                 if (Camera_Sword.active == true) {
                     Camera_Sword.active = false;

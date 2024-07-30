@@ -7,6 +7,13 @@
   "top": 0,
   "bottom": 0,
   "name": "Scene2D",
+  "mouseThrough": true,
+  "_$comp": [
+    {
+      "_$type": "e9483d1c-8003-46f2-83a1-07b6d9365dd8",
+      "scriptPath": "../src/wander/SceneWander2dScript.ts"
+    }
+  ],
   "_$child": [
     {
       "_$id": "n9gjxcltvl",

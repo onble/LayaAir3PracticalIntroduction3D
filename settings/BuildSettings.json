@@ -1,3 +1,9 @@
 {
-  "name": "LayaAir3PracticalIntroduction3D"
+  "name": "LayaAir3PracticalIntroduction3D",
+  "startupScene": "res://c2096cca-18fa-4b37-8908-a1d251511b01",
+  "includedScenes": [
+    "res://573fad1c-75ed-4de3-bf96-20d7a413acae",
+    "res://89ecc427-4d7d-42de-919c-f349b690e110",
+    "res://1c14c702-817f-4c5a-af6b-4506186e26b1"
+  ]
 }

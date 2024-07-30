@@ -35,6 +35,7 @@ export class UIScript extends Laya.Script {
         const btnExit = this.owner.getChildByName("btnExit");
         btnExit.on(Laya.Event.CLICK, () => {
             console.log("btnExit");
+            Laya.Scene.open("resources/Scenes/Scene_Start.ls", true);
         });
     }
     /** 摇杆控制 */
