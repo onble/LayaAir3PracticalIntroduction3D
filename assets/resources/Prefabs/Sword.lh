@@ -1,8 +1,8 @@
 {
   "_$ver": 1,
-  "_$id": "uou101qr",
+  "_$id": "ldd37swc",
   "_$type": "Sprite3D",
-  "name": "Shield08PBR",
+  "name": "OHS06PBR",
   "transform": {
     "localPosition": {
       "_$type": "Vector3",
@@ -11,15 +11,43 @@
       "z": -0.5722767877389344
     }
   },
+  "_$comp": [
+    {
+      "_$type": "Rigidbody3D",
+      "colliderShape": {
+        "_$type": "BoxColliderShape",
+        "localOffset": {
+          "_$type": "Vector3",
+          "z": 0.5
+        },
+        "size": {
+          "_$type": "Vector3",
+          "x": 0.3,
+          "y": 0.3,
+          "z": 1.5
+        }
+      },
+      "collisionGroup": 1,
+      "trigger": true,
+      "isKinematic": true
+    },
+    {
+      "_$type": "ba12b766-c448-46cb-8a6d-b829472b5c6f",
+      "scriptPath": "../src/RPG/SwordScript.ts",
+      "tim": null,
+      "shield": null
+    }
+  ],
   "_$child": [
     {
       "_$id": "#45",
       "_$type": "Sprite3D",
-      "name": "Shield08",
+      "name": "OHS06_Sword_R",
       "transform": {
-        "localPosition": {
-          "_$type": "Vector3",
-          "y": 3.1554436208840472e-30
+        "localRotation": {
+          "_$type": "Quaternion",
+          "y": 1,
+          "w": 6.123233995736766e-17
         },
         "localScale": {
           "_$type": "Vector3",
@@ -32,7 +60,7 @@
         {
           "_$type": "MeshFilter",
           "sharedMesh": {
-            "_$uuid": "c0fa51dd-d772-48e6-b73b-a3a1cd5796da@lm0",
+            "_$uuid": "a11a151e-8cc8-409f-b04a-4d645aa21bc0@lm0",
             "_$type": "Mesh"
           }
         },

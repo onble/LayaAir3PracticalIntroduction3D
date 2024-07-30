@@ -1,0 +1,80 @@
+{
+  "_$ver": 1,
+  "_$id": "uou101qr",
+  "_$type": "Sprite3D",
+  "name": "Shield08PBR",
+  "transform": {
+    "localPosition": {
+      "_$type": "Vector3",
+      "x": 13.709326644237885,
+      "y": 0.657677524309988,
+      "z": -0.5722767877389344
+    }
+  },
+  "_$comp": [
+    {
+      "_$type": "fa1ac0e8-a54f-4eec-84c6-abf6f8662435",
+      "scriptPath": "../src/RPG/ShieldScript.ts",
+      "flashPrefab": null
+    },
+    {
+      "_$type": "Rigidbody3D",
+      "colliderShape": {
+        "_$type": "BoxColliderShape",
+        "localOffset": {
+          "_$type": "Vector3",
+          "y": 0.1,
+          "z": 0.1
+        },
+        "size": {
+          "_$type": "Vector3",
+          "x": 1,
+          "y": 0.2,
+          "z": 1.2
+        }
+      },
+      "collisionGroup": 1,
+      "trigger": true,
+      "isKinematic": true
+    }
+  ],
+  "_$child": [
+    {
+      "_$id": "#45",
+      "_$type": "Sprite3D",
+      "name": "Shield08",
+      "transform": {
+        "localPosition": {
+          "_$type": "Vector3",
+          "y": 3.1554436208840472e-30
+        },
+        "localScale": {
+          "_$type": "Vector3",
+          "x": 0.02,
+          "y": 0.02,
+          "z": 0.02
+        }
+      },
+      "_$comp": [
+        {
+          "_$type": "MeshFilter",
+          "sharedMesh": {
+            "_$uuid": "c0fa51dd-d772-48e6-b73b-a3a1cd5796da@lm0",
+            "_$type": "Mesh"
+          }
+        },
+        {
+          "_$type": "MeshRenderer",
+          "receiveShadow": true,
+          "castShadow": true,
+          "sharedMaterials": [
+            {
+              "_$uuid": "16b95048-6a20-43ba-ab6a-cde93444ebd6",
+              "_$type": "Material"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

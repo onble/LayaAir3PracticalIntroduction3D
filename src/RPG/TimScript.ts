@@ -1,3 +1,5 @@
+import { SwordScript } from "./SwordScript";
+
 const { regClass, property } = Laya;
 
 @regClass()
@@ -11,6 +13,9 @@ export class TimScript extends Laya.Script {
     moving: boolean = false;
     /** 记录角色的速度 */
     speed: number = 0.5;
+
+    /** 剑的脚本 */
+    swordSp: SwordScript;
     //组件被激活后执行，此时所有节点和组件均已创建完毕，此方法只执行一次
     // onAwake(): void {}
     //组件被启用后执行，例如节点被添加到舞台后
@@ -19,6 +24,10 @@ export class TimScript extends Laya.Script {
         // 播放融合动作
         this.animator.crossFade("Idel", 0.1);
         this.station = "Idel";
+
+        let sword = this.owner.parent.getChildByName("sword");
+        console.log("[sword]", sword);
+        this.swordSp = sword.getComponent(SwordScript);
     }
 
     /** 攻击动作1 */
@@ -45,12 +54,14 @@ export class TimScript extends Laya.Script {
     /** 攻击2 - 发射 */
     attackMissile() {
         console.log("攻击2 - 发射");
+        this.swordSp.missileReady();
     }
     /** 攻击2 - 结束 */
     attackMissileOver() {
         console.log("攻击2 - 结束");
         this.station = "Idel";
         this.animator.crossFade("Idel", 0.1);
+        this.swordSp.missileSend();
     }
 
     //组件被禁用时执行，例如从节点从舞台移除后

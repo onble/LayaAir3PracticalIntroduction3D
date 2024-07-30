@@ -52,16 +52,14 @@
           "transform": {
             "localPosition": {
               "_$type": "Vector3",
-              "x": 19.12197230429735,
-              "y": 5,
-              "z": 4.415377179563532
+              "x": 15,
+              "y": 10,
+              "z": 10
             },
             "localRotation": {
               "_$type": "Quaternion",
-              "x": -0.22565226413150138,
-              "y": 0.3890923902498609,
-              "z": 0.09891353017820095,
-              "w": 0.887639724826274
+              "x": -0.25881904510252074,
+              "w": 0.9659258262890683
             }
           },
           "orthographicVerticalSize": 10,
@@ -147,6 +145,37 @@
           }
         },
         {
+          "_$id": "f92ydfza",
+          "_$prefab": "b5a4f261-5ea5-473f-85c4-05fef6b82113",
+          "name": "shield",
+          "active": true,
+          "layer": 0,
+          "transform": {
+            "localPosition": {
+              "_$type": "Vector3",
+              "x": 15,
+              "y": 6,
+              "z": -3
+            },
+            "localRotation": {
+              "_$type": "Quaternion",
+              "x": 0,
+              "y": 0.7071067811865475,
+              "z": 0,
+              "w": 0.7071067811865476
+            }
+          },
+          "_$comp": [
+            {
+              "_$override": "fa1ac0e8-a54f-4eec-84c6-abf6f8662435",
+              "flashPrefab": {
+                "_$uuid": "cdff5f53-e39d-4354-97b6-8dce5cf0ac9c",
+                "_$type": "Prefab"
+              }
+            }
+          ]
+        },
+        {
           "_$id": "4om0rorm",
           "_$prefab": "4588e9a9-933f-450c-9f7b-f61b046e617d",
           "name": "scene1",
@@ -167,6 +196,39 @@
               "w": 1
             }
           }
+        },
+        {
+          "_$id": "v5u1404t",
+          "_$prefab": "80426b0f-3d98-4db5-9b97-cd2d8d9074d9",
+          "name": "sword",
+          "active": true,
+          "layer": 0,
+          "transform": {
+            "localPosition": {
+              "_$type": "Vector3",
+              "x": 14,
+              "y": 2.5,
+              "z": -1
+            },
+            "localRotation": {
+              "_$type": "Quaternion",
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            }
+          },
+          "_$comp": [
+            {
+              "_$override": "ba12b766-c448-46cb-8a6d-b829472b5c6f",
+              "tim": {
+                "_$ref": "4hy4yi5v"
+              },
+              "shield": {
+                "_$ref": "f92ydfza"
+              }
+            }
+          ]
         }
       ]
     },
