@@ -41,9 +41,19 @@
         "b": 0.5
       },
       "lightmaps": [],
+      "lightingSettings": {
+        "_$uuid": "29801a49-0874-48f7-9577-98a1ae3c5b50",
+        "_$type": "LightingSettings"
+      },
       "componentElementDatasMap": {
         "_$type": "Record"
       },
+      "_$comp": [
+        {
+          "_$type": "10e09498-a6e1-4dee-bbbc-832badb0371e",
+          "scriptPath": "../src/RPG/Scene3dScript.ts"
+        }
+      ],
       "_$child": [
         {
           "_$id": "6jx8h8bvc6",
@@ -63,6 +73,58 @@
             }
           },
           "orthographicVerticalSize": 10,
+          "fieldOfView": 45,
+          "nearPlane": 0.3,
+          "farPlane": 1000,
+          "clearFlag": 1,
+          "clearColor": {
+            "_$type": "Color",
+            "r": 0.3921,
+            "g": 0.5843,
+            "b": 0.9294
+          },
+          "cullingMask": 2147483647,
+          "normalizedViewport": {
+            "_$type": "Viewport",
+            "width": 1,
+            "height": 1
+          },
+          "depthTextureFormat": 35,
+          "_$comp": [
+            {
+              "_$type": "92a16d76-ee29-4d99-9c90-0d31a424880a",
+              "scriptPath": "../src/RPG/GameraFellowScript.ts",
+              "target": {
+                "_$ref": "4hy4yi5v"
+              }
+            }
+          ]
+        },
+        {
+          "_$id": "ol7t948h",
+          "_$type": "Camera",
+          "name": "Camera_Sword",
+          "active": false,
+          "transform": {
+            "localPosition": {
+              "_$type": "Vector3",
+              "x": 15,
+              "y": 10,
+              "z": 10
+            },
+            "localRotation": {
+              "_$type": "Quaternion",
+              "x": -0.2588190471140138,
+              "w": 0.9659258257500903
+            },
+            "localScale": {
+              "_$type": "Vector3",
+              "x": 1,
+              "y": 0.9999999865388264,
+              "z": 0.9999999865388264
+            }
+          },
+          "orthographicVerticalSize": 10,
           "fieldOfView": 60,
           "nearPlane": 0.3,
           "farPlane": 1000,
@@ -79,10 +141,19 @@
             "width": 1,
             "height": 1
           },
-          "depthTextureFormat": 35
+          "depthTextureFormat": 35,
+          "_$comp": [
+            {
+              "_$type": "92a16d76-ee29-4d99-9c90-0d31a424880a",
+              "scriptPath": "../src/RPG/GameraFellowScript.ts",
+              "target": {
+                "_$ref": "v5u1404t"
+              }
+            }
+          ]
         },
         {
-          "_$id": "6ni3p096l5",
+          "_$id": "mmzr9ymj",
           "_$type": "Sprite3D",
           "name": "Direction Light",
           "transform": {
@@ -94,31 +165,32 @@
             },
             "localRotation": {
               "_$type": "Quaternion",
-              "x": -0.40821789367673483,
-              "y": 0.23456971600980447,
-              "z": 0.109381654946615,
-              "w": 0.875426098065593
+              "x": -0.5339380400142894,
+              "y": -0.11872771934077994,
+              "z": -0.7504230687675059,
+              "w": 0.3710513656455068
+            },
+            "localScale": {
+              "_$type": "Vector3",
+              "x": 0.9999999982666603,
+              "y": 0.999999990862647,
+              "z": 1.0000000163023393
             }
           },
           "_$comp": [
             {
               "_$type": "DirectionLightCom",
-              "color": {
-                "_$type": "Color",
-                "r": 0.6,
-                "g": 0.6,
-                "b": 0.6
-              },
               "intensity": 1,
               "lightmapBakedType": 1,
-              "shadowStrength": 1,
-              "shadowDistance": 50,
-              "shadowDepthBias": 1,
+              "shadowMode": 3,
+              "shadowStrength": 0.4,
+              "shadowDistance": 100,
+              "shadowDepthBias": 0.8,
               "shadowNormalBias": 1,
               "shadowNearPlane": 0.1,
-              "strength": null,
+              "strength": 1.7,
               "angle": null,
-              "maxBounces": null
+              "maxBounces": 1024
             }
           ]
         },

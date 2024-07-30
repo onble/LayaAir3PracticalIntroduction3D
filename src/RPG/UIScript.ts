@@ -30,6 +30,7 @@ export class UIScript extends Laya.Script {
         const btnCamera = this.owner.getChildByName("btnCamera");
         btnCamera.on(Laya.Event.CLICK, (e: Laya.Event) => {
             e.stopPropagation();
+            Laya.stage.event(Laya.Event.MESSAGE, { type: "ChangeCamera" });
         });
         const btnExit = this.owner.getChildByName("btnExit");
         btnExit.on(Laya.Event.CLICK, () => {
