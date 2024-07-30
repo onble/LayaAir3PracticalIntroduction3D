@@ -64,7 +64,7 @@ export class SwordScript extends Laya.Script {
                 }
                 break;
         }
-        /** 飞行6秒未集中则返回 */
+        /** 飞行3秒未击中则返回 */
         if (this.flying === true) {
             this.flyingCount += Laya.timer.delta;
             if (this.flyingCount >= 3000) {
@@ -79,7 +79,73 @@ export class SwordScript extends Laya.Script {
         this.owner.transform.localPositionX = this.tim.transform.localPositionX;
         this.owner.transform.localPositionZ = this.tim.transform.localPositionZ;
     }
-    asBullet() {}
+    aimAsBullet() {
+        this.actionType = Bullet;
+        let s1 = this.speed;
+        let s2 = 2; // 盾牌移动速度
+
+        // v1 剑指向盾牌的向量
+        let v1 = new Laya.Vector3();
+        Laya.Vector3.subtract(
+            this.shield.transform.position,
+            this.owner.transform.position,
+            v1
+        );
+        console.log("[v1]", v1);
+
+        let v1_normalize = new Laya.Vector3();
+        Laya.Vector3.normalize(v1, v1_normalize);
+
+        let l1 = v1.length();
+        console.log("[l1]", l1);
+
+        // V2盾牌的forward向量
+        let v2 = new Laya.Vector3();
+        this.shield.transform.getForward(v2);
+        let v2a = new Laya.Vector3();
+        Laya.Vector3.scale(v2, -1, v2a);
+        let v2_normalize = new Laya.Vector3();
+        Laya.Vector3.normalize(v2a, v2_normalize);
+        console.log("[v2_normalize]", v2_normalize);
+
+        // 进行夹角的计算
+        let dot = Laya.Vector3.dot(v1_normalize, v2_normalize);
+        console.log("[dot]", dot);
+        // v1与v2夹角
+        let d2 = Math.acos(dot);
+
+        console.log("[d2]", (d2 / Math.PI) * 180);
+
+        let d1 = Math.asin((s2 * Math.sin(d2)) / s1);
+        let t = l1 / (s1 * Math.cos(d1) + s2 * Math.cos(d2));
+
+        let p2 = new Laya.Vector3();
+        Laya.Vector3.scale(v2_normalize, t * s2, p2);
+
+        let forward2Vector = new Laya.Vector3();
+        Laya.Vector3.add(this.shield.transform.position, p2, forward2Vector);
+
+        console.log("[forward2Vector]", forward2Vector);
+
+        let upVector = new Laya.Vector3();
+        this.owner.transform.getUp(upVector);
+
+        // 第四个参数很重要，false反向
+        this.owner.transform.lookAt(forward2Vector, upVector, false, false);
+        this.flying = true;
+    }
+    asBullet() {
+        let forwardVector = new Laya.Vector3();
+        this.owner.transform.getForward(forwardVector);
+
+        let translation = new Laya.Vector3();
+        Laya.Vector3.scale(
+            forwardVector,
+            (-1 * Laya.timer.delta * this.speed) / 1000,
+            translation
+        );
+        this.owner.transform.translate(translation, false);
+    }
     asMissile() {
         if (this.flying === false) return;
         let targetPosition;

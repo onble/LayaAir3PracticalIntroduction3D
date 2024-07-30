@@ -39,6 +39,7 @@ export class TimScript extends Laya.Script {
     /** 直接攻击 - 发射 */
     attackDirect() {
         console.log("直接攻击 - 发射");
+        this.swordSp.aimAsBullet();
     }
     /** 直接攻击 - 结束 */
     attackDirectOver() {
